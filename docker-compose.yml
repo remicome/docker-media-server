@@ -2,3 +2,5 @@ version: "3.9"
 services:
   mopidy:
     build: .
+    ports:
+      - "8080:8080"
