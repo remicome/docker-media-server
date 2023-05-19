@@ -8,6 +8,7 @@ RUN apk add --no-cache --virtual build-dependencies \
 RUN apk add --no-cache py3-gst gst-plugins-ugly gst-plugins-good
 RUN python3 -m pip install --upgrade PyGObject
 RUN python3 -m pip install --upgrade mopidy mopidy-iris
+RUN python3 -m pip install --upgrade yt-dlp ytmusicapi mopidy-youtube
 RUN apk del build-dependencies
 
 COPY mopidy.conf /root/.config/mopidy/mopidy.conf
