@@ -6,3 +6,4 @@ services:
       - "6080:8080"
     volumes:
       - "/tmp/pulseaudio.socket:/tmp/pulseaudio.socket"
+    restart: always
