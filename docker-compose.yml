@@ -3,6 +3,6 @@ services:
   mopidy:
     build: mopidy
     ports:
-      - "8080:8080"
+      - "6080:8080"
     volumes:
       - "/tmp/pulseaudio.socket:/tmp/pulseaudio.socket"
