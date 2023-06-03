@@ -5,5 +5,5 @@ services:
     ports:
       - "6080:8080"
     volumes:
-      - "/tmp/pulseaudio.socket:/tmp/pulseaudio.socket"
+      - "/var/local/lib/pulseaudio:/tmp/pulseaudio"
     restart: always
